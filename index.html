@@ -11,6 +11,7 @@
       content="Інформація про Кругляк Артема Ігоровича та опис Київа"
     />
     <title>Кругляк А.І. - Група ІО-25</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h2>Кругляк Артем Ігорович</h2>
@@ -31,8 +32,8 @@
       <li>"Моя геройська академія"</li>
     </ol>
 
-    <h3>Опис улюбленого міста: Київ</h3>
-    <p>
+    <h3 id="7">Опис улюбленого міста: Київ</h3>
+    <p id="8">
       Київ — це столиця та найбільше місто України, відоме своєю багатою
       історією, мальовничими краєвидами та значущістю для культурного і
       духовного життя країни. Засноване більше ніж півтори тисячі років тому,
@@ -67,7 +68,16 @@
     </p>
 
     <a href="https://kyivcity.gov.ua/" target="_blank">
-      <img src="kiyv.jpg" alt="Фото Київа" width="900" />
+      <img id="image" src="kiyv.jpg" alt="Фото Київа" width="900" />
     </a>
+
+    <div id="button-container">
+      <button onclick="addImage()">Додати</button>
+      <button onclick="increaseImage()">Збільшити</button>
+      <button onclick="decreaseImage()">Зменшити</button>
+      <button onclick="deleteImage()">Видалити</button>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
