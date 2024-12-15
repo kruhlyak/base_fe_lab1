@@ -12,12 +12,12 @@ function toggleBackgroundColor(element, class1, class2) {
 }
 
 // Перемикаємо колір абзацу "Моє улюблене місце" за допомогою getElementById
-document.getElementById("7").addEventListener("click", function () {
+document.getElementById("target7").addEventListener("click", function () {
   toggleBackgroundColor(this, "blue-background", "green-background");
 });
 
 // Перемикаємо колір абзацу про Київ за допомогою querySelector
-document.querySelector("8").addEventListener("click", function () {
+document.querySelector("#target8").addEventListener("click", function () {
   toggleBackgroundColor(this, "green-background", "blue-background");
 });
 
